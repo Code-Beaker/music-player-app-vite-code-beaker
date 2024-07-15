@@ -1,0 +1,14 @@
+$colors: (
+  //   primary__violet: hsl(263, 45%, 56%),
+  primary__blue-500: hsl(214, 65%, 50%),
+  primary__blue-600: hsl(203, 100%, 41%),
+  primary__blue-700: hsl(196, 100%, 36%),
+  primary__cyan-500: hsl(185, 100%, 30%),
+  primary__cyan-600: hsl(171, 100%, 28%),
+  neutral__black: hsl(0, 0, 0%),
+  neutral__white: hsl(0, 0%, 100%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

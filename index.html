@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting Fires from The Chainsmokers | musicZone</title>
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="typeScales.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__cols search-shown">
+        <button id="toggleSidebar" class="navbar__toggle-btn navbar__btn">
+          <img src="assets/icon-menu.svg" alt="" id="toggleSidebarIcon" />
+        </button>
+        <div class="navbar__music-details">
+          <p class="navbar__music-state">Now playing</p>
+          <h1 class="navbar__music-title">Setting fires</h1>
+          <h2 class="navbar__music-artist">The Chainsmokers</h2>
+        </div>
+        <input
+          type="search"
+          placeholder="Search for music, artists and more..."
+          id="searchForMusic"
+          class="navbar__search"
+        />
+        <button id="searchButton" class="navbar__search-btn navbar__btn">
+          <img src="assets/icon-search.svg" alt="" />
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="player">
+        <div class="player__thumbnail-wrapper">
+          <img src="assets/track-thumb.jpg" alt="" class="player__thumbnail" />
+        </div>
+        <div class="player__progress"></div>
+        <div class="player__time-cols">
+          <span class="player__time">2:38</span>
+          <span class="player__time">4:07</span>
+        </div>
+        <div class="player__controls">
+          <button class="player__controls--control">
+            <img src="assets/icon-repeat.svg" alt="" />
+          </button>
+          <button class="player__controls--control">
+            <img src="assets/icon-previous.svg" alt="" />
+          </button>
+          <button class="player__controls--control control-play">
+            <img src="assets/icon-play.svg" alt="" />
+          </button>
+          <button class="player__controls--control">
+            <img src="assets/icon-next.svg" alt="" />
+          </button>
+          <button class="player__controls--control">
+            <img src="assets/icon-download.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section class="others">
+        <nav class="others__nav">
+          <ul class="others__nav--links">
+            <li class="others__nav--item">
+              <a href="#" class="others__nav--link others__nav--active"
+                >Up next</a
+              >
+            </li>
+            <li class="others__nav--item">
+              <a href="#" class="others__nav--link">Lyrics</a>
+            </li>
+            <li class="others__nav--item">
+              <a href="#" class="others__nav--link">Related</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="others__songs-list">
+          <ul class="others__songs">
+            <li class="others__songs--item">
+              <div class="others__song">
+                <div class="others__song--cols">
+                  <article>
+                    <a class="others__song--name" href="#">Closer</a>
+                    <h4 class="others__song--artist">The Chainsmokers</h4>
+                  </article>
+                  <p class="others__song--duration">4:06</p>
+                </div>
+              </div>
+            </li>
+            <li class="others__songs--item">
+              <div class="others__song">
+                <div class="others__song--cols">
+                  <article>
+                    <a class="others__song--name" href="#">Roses</a>
+                    <h4 class="others__song--artist">The Chainsmokers</h4>
+                  </article>
+                  <p class="others__song--duration">3:47</p>
+                </div>
+              </div>
+            </li>
+            <li class="others__songs--item">
+              <div class="others__song">
+                <div class="others__song--cols">
+                  <article>
+                    <a class="others__song--name" href="#">Don't let me down</a>
+                    <h4 class="others__song--artist">The Chainsmokers</h4>
+                  </article>
+                  <p class="others__song--duration">3:38</p>
+                </div>
+              </div>
+            </li>
+            <li class="others__songs--item">
+              <div class="others__song">
+                <div class="others__song--cols">
+                  <article>
+                    <a class="others__song--name" href="#"
+                      >Something just like this</a
+                    >
+                    <h4 class="others__song--artist">The Chainsmokers</h4>
+                  </article>
+                  <p class="others__song--duration">4:08</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
