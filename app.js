@@ -9,6 +9,7 @@ const trackInfo = document.querySelector(".navbar__music-details");
 let hidden = true;
 
 searchBtn.addEventListener("click", () => {
+  searchBtn.classList.toggle("search-btn-focus");
   searchBar.classList.toggle("display");
   trackInfo.classList.toggle("hide-content");
   toggleSidebarButton.classList.toggle("hide-content");

@@ -82,15 +82,11 @@ body {
     border-radius: 5rem;
     padding: 0.5rem;
     transition: 0.25s ease;
-
-    &:focus {
-      background-image: linear-gradient(
-        45deg,
-        m.color(primary__blue-500),
-        m.color(primary__cyan-500)
-      );
-    }
   }
+}
+
+.search-btn-focus {
+  background-color: m.color(primary__blue-500);
 }
 
 // hide content
