@@ -188,18 +188,19 @@ body {
     transition: 0.25s ease;
 
     &:hover {
+      opacity: 0.85;
       box-shadow: 5px 5px 20px hsla(from m.color(neutral__black) h s l / 0.15);
-      scale: 1.1;
-
-      & img {
-        scale: 1.2;
-        opacity: 0.75;
-        // rotate: 360deg;
-      }
     }
 
     &:active {
-      scale: 0.95;
+      scale: 1.1;
+      opacity: 1;
+
+      & img {
+        scale: 1.2;
+
+        // rotate: 360deg;
+      }
     }
 
     & img {
