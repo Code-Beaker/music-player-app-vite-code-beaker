@@ -59,6 +59,10 @@ body {
     display: none;
     width: 17.5rem;
 
+    @media screen and (width > 50rem) {
+      width: 55rem;
+    }
+
     &:focus {
       outline: none;
       border: 0.15rem solid m.color(primary__cyan-500);
