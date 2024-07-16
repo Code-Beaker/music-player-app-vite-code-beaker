@@ -6,8 +6,9 @@ body {
 
 // navbar
 .navbar {
-  height: fit-content;
+  height: 6.5rem;
   padding: 1rem;
+  transition: 0.25s ease;
 
   &__cols {
     display: flex;
@@ -83,6 +84,10 @@ body {
     padding: 0.5rem;
     transition: 0.25s ease;
   }
+}
+
+.nav--collapsed {
+  height: 5rem;
 }
 
 .search-btn-focus {

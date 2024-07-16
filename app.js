@@ -32,6 +32,7 @@ searchBtn.addEventListener("click", () => {
   searchBar.classList.toggle("display");
   trackInfo.classList.toggle("hide-content");
   toggleSidebarButton.classList.toggle("hide-content");
+  document.querySelector(".navbar").classList.toggle("nav--collapsed");
 });
 
 toggleSidebarButton.addEventListener("click", () => {
