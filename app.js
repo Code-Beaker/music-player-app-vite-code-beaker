@@ -14,6 +14,8 @@ const musicPlaybackControlButton = document.querySelector(
 const playbackIndicatorIcon = document.querySelector(
   ".music-play-control__icon"
 );
+const sidebar = document.querySelector(".sidebar");
+
 let hidden = true;
 let playing = true;
 
@@ -38,9 +40,13 @@ searchBtn.addEventListener("click", () => {
 toggleSidebarButton.addEventListener("click", () => {
   if (hidden) {
     toggleSidebarIcon.setAttribute("src", closeIcon);
+    sidebar.classList.add("sidebar__slide-in");
+    toggleSidebarButton.classList.add("navbar__toggle-rotate");
     hidden = false;
   } else {
     toggleSidebarIcon.setAttribute("src", openIcon);
+    sidebar.classList.remove("sidebar__slide-in");
+    toggleSidebarButton.classList.remove("navbar__toggle-rotate");
     hidden = true;
   }
 });

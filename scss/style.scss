@@ -94,6 +94,10 @@ body {
   height: 5rem;
 }
 
+.navbar__toggle-rotate {
+  rotate: 90deg;
+}
+
 .search-btn-focus {
   background-color: m.color(primary__blue-500);
 }
@@ -282,6 +286,79 @@ body {
     color: m.color(primary__blue-500);
     border-radius: 1rem;
   }
+}
+
+// sidebear
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: m.color(neutral__white);
+  padding: 3rem;
+  z-index: 9;
+  transform: translateX(-50rem);
+  transition: 0.25s ease;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  &__links--link {
+    text-decoration: none;
+    font-weight: m.weight(semibold);
+    color: m.color(neutral__black);
+    font-size: var(--step-1);
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    overflow: hidden;
+    border-radius: 5rem;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+      // opacity: 0.75;
+
+      &::after {
+        transform: translateX(0);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: translateX(-100%);
+      border-radius: 5rem;
+      background-image: linear-gradient(
+        45deg,
+        m.color(primary__blue-500),
+        m.color(primary__blue-600),
+        m.color(primary__cyan-500),
+        m.color(primary__cyan-600)
+      );
+      transition: 0.25s ease;
+    }
+
+    &:active {
+      scale: 0.985;
+      // color: m.color(primary__cyan-500);
+    }
+  }
+}
+
+.sidebar__slide-in {
+  transform: translateX(0);
 }
 
 // Songs
