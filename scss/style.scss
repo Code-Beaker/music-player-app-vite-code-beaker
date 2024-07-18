@@ -278,7 +278,10 @@ body {
     &:hover {
       background-color: m.color(neutral__white);
       color: m.color(primary__blue-500);
-      border-radius: 1rem;
+    }
+
+    &:active {
+      border-radius: 0.5rem;
     }
   }
   &__nav--active {
